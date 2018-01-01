@@ -31,6 +31,10 @@ nnoremap Q <Nop>
 " Map semicolon to colon, to avoid having to press shift.
 map ; :
 
+" Navigate through buffers with page up and page down.
+map <PageUp> :bn!<cr>
+map <PageDown> :bp!<cr>
+
 " Save views.
 autocmd BufWinLeave *.* mkview
 autocmd BufWinEnter *.* silent loadview
