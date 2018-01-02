@@ -32,8 +32,8 @@ nnoremap Q <Nop>
 map ; :
 
 " Navigate through buffers with page up and page down.
-map <PageUp> :bn!<cr>
-map <PageDown> :bp!<cr>
+map <PageUp> :bp!<cr>
+map <PageDown> :bn!<cr>
 
 " Save views.
 autocmd BufWinLeave *.* mkview
