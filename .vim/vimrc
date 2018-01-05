@@ -44,7 +44,7 @@ autocmd FileType plaintex set filetype=tex " Try to find a better way to do this
 
 " Compilation commands.
 autocmd FileType python map <F2> :w <bar> !python3 "%"<cr>
-autocmd FileType tex map <F2> :wa <bar> tabfirst <cr> :!pdflatex "%"<cr>
+autocmd FileType tex map <F2> :wa <bar> bfirst <cr> :!pdflatex "%"<cr>
 autocmd FileType scss map <F2> :w <bar> !scss % %:r.css --style compressed <cr>
 autocmd FileType c map <F2> :w <bar> !gcc -o %:r % <cr>
 autocmd FileType cpp map <F2> :w <bar> !g++ -o %:r % <cr>
