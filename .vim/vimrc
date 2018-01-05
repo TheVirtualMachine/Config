@@ -7,6 +7,7 @@ set showcmd
 set cursorline
 set mouse=h
 set tabpagemax=100
+set hidden " Save undo history when switching between buffers.
 
 hi cursorline cterm=None " Do not underline the current line.
 hi cursorline ctermbg=237 " Make the current line highlighted in dark grey.
