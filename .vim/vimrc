@@ -31,11 +31,12 @@ inoremap <Down> <ESC>gja
 nnoremap Q <Nop>
 
 " Map semicolon to colon, to avoid having to press shift.
-map ; :
+noremap ; :
+noremap : ;
 
 " Navigate through buffers with page up and page down.
-map <PageUp> :bp!<cr>
-map <PageDown> :bn!<cr>
+noremap <PageUp> :bp!<cr>
+noremap <PageDown> :bn!<cr>
 
 " Save views.
 autocmd BufWinLeave *.* mkview
