@@ -46,15 +46,15 @@ autocmd BufWinEnter *.* silent loadview
 autocmd FileType plaintex set filetype=tex " Try to find a better way to do this.
 
 " Compilation commands.
-autocmd FileType python map <F2> :w <bar> !python3 "%"<cr>
-autocmd FileType tex map <F2> :wa <bar> bfirst <cr> :!pdflatex "%"<cr>
-autocmd FileType scss map <F2> :w <bar> !scss % %:r.css --style compressed <cr>
-autocmd FileType c map <F2> :w <bar> !gcc -o %:r % <cr>
-autocmd FileType cpp map <F2> :w <bar> !g++ -o %:r % <cr>
-autocmd FileType markdown map <F2> :w <bar> !pandoc -s % -o %:r.pdf <cr>
+autocmd FileType python noremap <F2> :w <bar> !python3 "%"<cr>
+autocmd FileType tex noremap <F2> :wa <bar> bfirst <cr> :!pdflatex "%"<cr>
+autocmd FileType scss noremap <F2> :w <bar> !scss % %:r.css --style compressed <cr>
+autocmd FileType c noremap <F2> :w <bar> !gcc -o %:r % <cr>
+autocmd FileType cpp noremap <F2> :w <bar> !g++ -o %:r % <cr>
+autocmd FileType markdown noremap <F2> :w <bar> !pandoc -s % -o %:r.pdf <cr>
 
 " Extra compilation commands.
-autocmd FileType tex map <F3> :wa <bar> tabfirst <cr> :!biber %:r<cr>
+autocmd FileType tex noremap <F3> :wa <bar> tabfirst <cr> :!biber %:r<cr>
 
 " Configure plugins
 
