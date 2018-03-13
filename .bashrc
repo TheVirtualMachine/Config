@@ -28,7 +28,7 @@ alias xzarchive='tar cfJ'
 
 # Zip all folders in directory
 alias zipall='for i in */; do zip -r "${i%/}.zip" "$i"; done'
-alias latexmake="latexmk -pdf -pvc"
+alias latexwatch="latexmk -pdf -pvc"
 
 # Plugins
 if [ -f `which powerline-daemon` ]; then
