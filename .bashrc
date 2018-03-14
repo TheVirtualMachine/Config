@@ -37,3 +37,6 @@ if [ -f `which powerline-daemon` ]; then
 	POWERLINE_BASH_SELECT=1
 	. /usr/share/powerline/bash/powerline.sh
 fi
+
+# Load GPG information.
+export GPG_TTY=$(tty)
