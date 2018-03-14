@@ -1,0 +1,3 @@
+# Add more files to list of generated LaTeX files, so that they can be automatically removed my latexmk -c.
+push @generated_exts, "nav";
+push @generated_exts, "snm";
