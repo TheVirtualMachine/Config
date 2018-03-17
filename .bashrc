@@ -11,15 +11,15 @@ fi
 # Stop Ctrl-S and Ctrl-Q from suspending and resuming the terminal, respectively.
 stty -ixon
 
-# Stop git from using a popup menu when prompting for password.
-unset SSH_ASKPASS
-
 # Path variables
 # export JAVA_HOME="/user/lib/jbm/java-openjdk"
 # export PATH=$JAVA_HOME/bin:$PATH
 
 # Change prompt name
 PS1='[\u@\W]\$ '
+
+# Stop git from using a popup menu when prompting for password.
+unset SSH_ASKPASS
 
 # User specific aliases and functions
 alias vim='vimx'
