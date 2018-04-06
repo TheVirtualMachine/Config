@@ -1,0 +1,19 @@
+#!/bin/bash
+
+for rasterFile in "$@"; do
+	imageName=${rasterFile%.*}
+	pbmFile=$imageName.pbm
+	svgFile=$imageName.svg
+
+	convert -flatten $rasterFile $imageName.pbm
+
+	echo "Converted $rasterFile to $pbmFile."
+
+	potrace -s $pbmFile -o $svgFile
+
+	echo "Converted $pbmFile to $svgFile."
+
+	rm $pbmFile
+
+	echo "Deleted $pbmFile."
+done
