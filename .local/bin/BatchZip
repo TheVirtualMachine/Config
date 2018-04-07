@@ -1,0 +1,5 @@
+#!/bin/bash
+
+for file in "$@"; do
+	zip -r -9 "${file}.zip" "$file"
+done
