@@ -26,8 +26,7 @@ alias vim='vimx'
 
 alias xzarchive='tar cfJ'
 
-# Zip all folders in directory
-alias zipall='for i in */; do zip -r "${i%/}.zip" "$i"; done'
+# Automatically recompile LaTeX file on save.
 alias latexwatch="latexmk -pdf -pvc"
 
 # Plugins
