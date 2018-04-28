@@ -1,1 +1,3 @@
 source ~/.vim/vimrc
+noremap <PageUp> gT
+noremap <PageDown> gt
