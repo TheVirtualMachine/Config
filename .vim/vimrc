@@ -69,4 +69,4 @@ set t_Co=256
 let g:powerline_pycmd = "py3"
 
 " Syntastic setup
-let g:syntastic_quit_messages = {"type": "style"}
+let g:syntastic_quiet_messages = {"type": "style"}
