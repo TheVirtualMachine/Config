@@ -1,4 +1,4 @@
 # Add more files to list of generated LaTeX files, so that they can be automatically removed by latexmk -c.
 push @generated_exts, "nav";
 push @generated_exts, "snm";
-$pdf_previewer = "start okular";
+$pdf_previewer = "start evince";
