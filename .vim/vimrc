@@ -52,6 +52,7 @@ autocmd FileType scss noremap <F2> :w <bar> !scss % %:r.css --style compressed <
 autocmd FileType c noremap <F2> :w <bar> !gcc -o %:r % <cr>
 autocmd FileType cpp noremap <F2> :w <bar> !g++ -o %:r % <cr>
 autocmd FileType markdown noremap <F2> :w <bar> !pandoc -s % -o %:r.pdf <cr>
+autocmd FileType r noremap <F2> :w <bar> !Rscript "%"<cr>
 
 " Extra compilation commands.
 " autocmd FileType tex noremap <F3> :wa <bar> tabfirst <cr> :!biber %:r<cr>
